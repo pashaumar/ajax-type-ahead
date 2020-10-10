@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(249, 202, 36, 1);
+}
+.container {
+  width: 320px;
+  margin: 5rem auto 0 auto;
+}
+#search {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: 8px solid white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+}
+.cities-info {
+  width: 90%;
+  margin: 0 auto;
+}
+.city-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0 0.5rem;
+  margin-top: 1px;
+}
+.sorry {
+  width: 100%;
+  color: red;
+  font-size: 1.5rem;
+}
+.cities-info > *:nth-child(odd) {
+  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  background: linear-gradient(to top, #ffffff 0%, #efefef 100%);
+}
+.cities-info > *:nth-child(even) {
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%);
+}
+.cities-info > *:first-child {
+  margin-top: 5px;
+}
